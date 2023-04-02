@@ -1,0 +1,319 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10955,        311]
+NotebookOptionsPosition[      7187,        241]
+NotebookOutlinePosition[      7863,        264]
+CellTagsIndexPosition[      7820,        261]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[StyleData[StyleDefinitions -> "Default.nb"],ExpressionUUID->"cfecb82b-c997-4cd5-ad1f-9e162c1122ca"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "\:542b\:6709Shift\:5feb\:6377\:952e\:7684\:81ea\:5b9a\:4e49\:5355\:5143", 
+   "\:ff0c", 
+   "\:5fc5\:987b\:653e\:5728\:6240\:6709\:53ea\:542bAlt\:5feb\:6377\:952e\
+\:81ea\:5b9a\:4e49\:5355\:5143\:7684\:540e\:9762", "\:ff0c", 
+   RowBox[{
+   "\:4e0d\:7136\:4ed6\:4f1a\:628a\:540e\:9762\:6240\:6709\:7684Alt\:53d8\
+\:6210Shift", "+", "Alt"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.885101381839354*^9, 
+  3.8851015506107454`*^9}},ExpressionUUID->"ccee796a-c903-4753-be3e-\
+ab7e1291b36b"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  "Stylemenulisting\:9009\:9879\:53ef\:4ee5\:63a7\:5236\:6b64\:5b50\:9879\
+\:662f\:5426\:663e\:793a", "*)"}]], "Input",
+ CellChangeTimes->{{3.885101381839354*^9, 3.8851015506107454`*^9}, {
+  3.8851024054821653`*^9, 
+  3.8851024407727737`*^9}},ExpressionUUID->"aada75d3-64b5-4eea-a37e-\
+26dbbe360a2a"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"\:5feb\:6377\:952e\:683c\:5f0f", "\:ff1a", 
+   RowBox[{"Alt", "+", "Num"}]}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.885101381839354*^9, 3.8851015506107454`*^9}, {
+  3.8851016426075487`*^9, 
+  3.885101678418898*^9}},ExpressionUUID->"59739fdb-60ec-4c84-bae0-\
+ad00b8e42925"]
+}, Open  ]],
+
+Cell[StyleData["Title"],
+ CellFrame->3,
+ CellFrameColor->RGBColor[208, 144, 86],
+ TextAlignment->Center,
+ FontFamily->"Times New Roman",
+ FontSize->30,
+ FontWeight->"Bold",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},ExpressionUUID->"5940b35b-8089-4cb4-9fd6-2cea82384f84"],
+
+Cell[StyleData["Chapter"],
+ TextAlignment->Left,
+ MenuCommandKey:>"2",
+ FontFamily->"SimSun",
+ FontSize->25,
+ FontWeight->"Bold",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->True},
+ FontColor->RGBColor[
+  0., 0., 0.5019607843137255],ExpressionUUID->"a2dcc63e-593a-4bbe-93f8-\
+02175aa855d9"],
+
+Cell[StyleData["Section"],
+ MenuCommandKey:>"3",
+ FontFamily->"SimSun",
+ FontSize->20,
+ FontWeight->"Bold",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},ExpressionUUID->"8a6cb0c4-d79e-4094-81fc-3f08af5ba683"],
+
+Cell[StyleData["Subsubsection"],
+ MenuCommandKey:>None,
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontWeight->"Normal",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},
+ FontColor->RGBColor[
+  1., 0.5019607843137255, 
+   0.25098039215686274`],ExpressionUUID->"c346b7d7-25bf-4875-9dac-\
+13b3dfc913e8"],
+
+Cell[StyleData["Input"],
+ MenuSortingValue->1540,
+ MenuCommandKey:>None,ExpressionUUID->"f862caba-13c4-4542-83c7-234e19da6d69"],
+
+Cell[StyleData["Text"],
+ CellFrame->{{0, 0}, {0, 3}},
+ CellFrameMargins->8,
+ CellFrameColor->GrayLevel[0.75],
+ CellFrameLabelMargins->0,
+ MenuCommandKey:>"4",
+ FontFamily->"Source Code Pro",
+ FontSize->12,
+ FontWeight->"Normal",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"0a22f53f-6113-41e8-8c93-8a6b629c104a"],
+
+Cell[CellGroupData[{
+
+Cell["", "ItemNumbered",
+ MenuCommandKey:>MenuKey[
+  "2", Modifiers -> {
+    "Shift"}],ExpressionUUID->"6920454f-2da1-48ff-8f19-f6e5312a112f"],
+
+Cell[StyleData["Code"],
+ MenuCommandKey:>"5",
+ FontFamily->"Source Code Pro",
+ FontSize->12,
+ FontWeight->"Normal",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},ExpressionUUID->"d29e8f51-228c-4d41-85dc-e6bf94f61c14"],
+
+Cell[StyleData["NaturalLanguageInput"],
+ MenuCommandKey:>"6",ExpressionUUID->"9f622d7a-2152-453c-8f40-364e14e36191"],
+
+Cell[StyleData["Defination"],
+ CellFrame->3,
+ CellDingbat->"\[FilledDiamond]",
+ CellFrameColor->RGBColor[0.815686, 0.564706, 0.337255],
+ CellFrameLabelMargins->10,
+ CellChangeTimes->{3.8847803266412697`*^9},
+ MenuSortingValue->1531,
+ MenuCommandKey:>"7",
+ Background->RGBColor[
+  1, 0.9, 0.8],ExpressionUUID->"21eedb4f-2f0b-4dce-a415-cbbc9b859841"],
+
+Cell[StyleData["Lemma", StyleDefinitions -> StyleData["Defination"]],
+ CellDingbat->"\[FilledCircle]",
+ CellFrameColor->RGBColor[0.25098, 0.501961, 0.501961],
+ MenuSortingValue->1532,
+ MenuCommandKey:>"8",
+ Background->RGBColor[
+  0.9, 1, 1],ExpressionUUID->"24e9884b-cc48-4365-be30-0588c05a663f"],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["Theorem"],
+ CellFrame->3,
+ CellDingbat->"\[FilledSquare]",
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellFrameLabelMargins->10,
+ TextAlignment->Left,
+ MenuSortingValue->1533,
+ MenuCommandKey:>"9",
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"df5d7e33-bbee-4c28-9535-34049306b65f"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"\:5feb\:6377\:952e\:683c\:5f0f", "\:ff1a", 
+   RowBox[{"Shfit", "+", "Alt", "+", "Num"}]}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.885101381839354*^9, 3.8851015506107454`*^9}, {
+  3.8851016426075487`*^9, 
+  3.8851016655905495`*^9}},ExpressionUUID->"3a0dbf4f-ef44-410c-aba9-\
+ea73b538978a"]
+}, Open  ]],
+
+Cell[StyleData["Subtitle"],
+ TextAlignment->Center,
+ MenuCommandKey:>MenuKey["1", Modifiers -> {"Shift"}],
+ StyleMenuListing->Automatic,
+ FontFamily->"SimSun",
+ FontSize->20,
+ FontWeight->"Bold",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},
+ FontColor->RGBColor[
+  0.8156862745098039, 0.5647058823529412, 
+   0.33725490196078434`],ExpressionUUID->"38728a49-1be2-4b4a-874a-\
+53ff453aa522"],
+
+Cell[StyleData["Subsection"],
+ MenuCommandKey:>MenuKey["3", Modifiers -> {"Shift"}],
+ FontFamily->"SimSun",
+ FontSize->17,
+ FontWeight->"Bold",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"StrikeThrough"->False,
+ "Underline"->False},ExpressionUUID->"c60bb2c3-2ef6-4383-9267-057e515739d5"],
+
+Cell[StyleData["CodeText"],
+ PageWidth->Infinity,
+ TextJustification->0.25,
+ MenuSortingValue->1401,
+ MenuCommandKey:>MenuKey["4", Modifiers -> {"Shift"}],
+ StyleMenuListing->Automatic,
+ FontFamily->"Source Code Pro",
+ FontSize->11,
+ FontWeight->"Normal",
+ FontSlant->"Plain",
+ FontTracking->"Plain",
+ FontVariations->{"Outline"->False,
+ "Shadow"->False,
+ "StrikeThrough"->False,
+ "Underlight"->None,
+ "Underline"->False},
+ Background->RGBColor[
+  1, 0.9, 1],ExpressionUUID->"b20b56bb-8b1e-4dae-be78-c0fa4f9981c3"],
+
+Cell[StyleData["ExternalLanguage"],
+ MenuSortingValue->1530,
+ MenuCommandKey:>MenuKey["6", Modifiers -> {"Shift"}],
+ StyleMenuListing->
+  Automatic,ExpressionUUID->"b2ad95c4-cf7e-4aed-8d6b-d04072b1dd16"]
+}, Open  ]]
+},
+WindowSize->{1152., 615.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (2021\:5e7412\:67082\
+\:65e5)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]]}, Visible -> False, 
+  FrontEndVersion -> 
+  "13.0 for Microsoft Windows (64-bit) (2021\:5e7412\:67082\:65e5)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+ExpressionUUID->"fc3c1c26-f1e7-421f-9552-68991247d4ac"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 104, 0, 25, 49, 0, "StyleData", "StyleDefinitions", "",ExpressionUUID->"cfecb82b-c997-4cd5-ad1f-9e162c1122ca"],
+Cell[687, 24, 532, 12, 28, "Input",ExpressionUUID->"ccee796a-c903-4753-be3e-ab7e1291b36b"],
+Cell[1222, 38, 330, 7, 28, "Input",ExpressionUUID->"aada75d3-64b5-4eea-a37e-26dbbe360a2a"],
+Cell[1555, 47, 320, 7, 28, "Input",ExpressionUUID->"59739fdb-60ec-4c84-bae0-ad00b8e42925"]
+}, Open  ]],
+Cell[1890, 57, 336, 10, 110, 24, 0, "StyleData", "Title", "All",ExpressionUUID->"5940b35b-8089-4cb4-9fd6-2cea82384f84"],
+Cell[2229, 69, 347, 12, 65, 26, 0, "StyleData", "Chapter", "All",ExpressionUUID->"a2dcc63e-593a-4bbe-93f8-02175aa855d9",
+ MenuCommandKey:>"2"],
+Cell[2579, 83, 271, 8, 52, 26, 0, "StyleData", "Section", "All",ExpressionUUID->"8a6cb0c4-d79e-4094-81fc-3f08af5ba683",
+ MenuCommandKey:>"3"],
+Cell[2853, 93, 366, 12, 42, 32, 0, "StyleData", "Subsubsection", "All",ExpressionUUID->"c346b7d7-25bf-4875-9dac-13b3dfc913e8",
+ MenuCommandKey:>None],
+Cell[3222, 107, 127, 2, 38, 24, 0, "StyleData", "Input", "All",ExpressionUUID->"f862caba-13c4-4542-83c7-234e19da6d69",
+ MenuSortingValue->1540,
+ MenuCommandKey:>None],
+Cell[3352, 111, 433, 14, 64, 23, 0, "StyleData", "Text", "All",ExpressionUUID->"0a22f53f-6113-41e8-8c93-8a6b629c104a",
+ MenuCommandKey:>"4"],
+Cell[CellGroupData[{
+Cell[3810, 129, 142, 3, 32, "ItemNumbered",ExpressionUUID->"6920454f-2da1-48ff-8f19-f6e5312a112f"],
+Cell[3955, 134, 279, 8, 66, 23, 0, "StyleData", "Code", "All",ExpressionUUID->"d29e8f51-228c-4d41-85dc-e6bf94f61c14",
+ MenuCommandKey:>"5"],
+Cell[4237, 144, 116, 1, 61, 39, 0, "StyleData", "NaturalLanguageInput", "All",ExpressionUUID->"9f622d7a-2152-453c-8f40-364e14e36191",
+ MenuCommandKey:>"6"],
+Cell[4356, 147, 348, 9, 58, 29, 0, "StyleData", "Defination", "All",ExpressionUUID->"21eedb4f-2f0b-4dce-a415-cbbc9b859841",
+ MenuSortingValue->1531,
+ MenuCommandKey:>"7"],
+Cell[4707, 158, 297, 6, 58, 69, 0, "StyleData", "Lemma", "All",ExpressionUUID->"24e9884b-cc48-4365-be30-0588c05a663f",
+ MenuSortingValue->1532,
+ MenuCommandKey:>"8"],
+Cell[CellGroupData[{
+Cell[5029, 168, 303, 9, 58, 26, 0, "StyleData", "Theorem", "All",ExpressionUUID->"df5d7e33-bbee-4c28-9535-34049306b65f",
+ MenuSortingValue->1533,
+ MenuCommandKey:>"9"],
+Cell[5335, 179, 336, 7, 28, "Input",ExpressionUUID->"3a0dbf4f-ef44-410c-aba9-ea73b538978a"]
+}, Open  ]],
+Cell[5686, 189, 452, 14, 57, 27, 0, "StyleData", "Subtitle", "All",ExpressionUUID->"38728a49-1be2-4b4a-874a-53ff453aa522",
+ MenuCommandKey:>MenuKey["1", Modifiers -> {"Shift"}],
+ StyleMenuListing->Automatic],
+Cell[6141, 205, 307, 8, 60, 29, 0, "StyleData", "Subsection", "All",ExpressionUUID->"c60bb2c3-2ef6-4383-9267-057e515739d5",
+ MenuCommandKey:>MenuKey["3", Modifiers -> {"Shift"}]],
+Cell[6451, 215, 514, 17, 51, 27, 0, "StyleData", "CodeText", "All",ExpressionUUID->"b20b56bb-8b1e-4dae-be78-c0fa4f9981c3",
+ MenuSortingValue->1401,
+ MenuCommandKey:>MenuKey["4", Modifiers -> {"Shift"}],
+ StyleMenuListing->Automatic],
+Cell[6968, 234, 203, 4, 63, 35, 0, "StyleData", "ExternalLanguage", "All",ExpressionUUID->"b2ad95c4-cf7e-4aed-8d6b-d04072b1dd16",
+ MenuSortingValue->1530,
+ MenuCommandKey:>MenuKey["6", Modifiers -> {"Shift"}],
+ StyleMenuListing->Automatic]
+}, Open  ]]
+}
+]
+*)
+

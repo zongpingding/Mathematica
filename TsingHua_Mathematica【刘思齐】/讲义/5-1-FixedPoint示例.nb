@@ -1,0 +1,208 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7883,        200]
+NotebookOptionsPosition[      7302,        182]
+NotebookOutlinePosition[      7739,        200]
+CellTagsIndexPosition[      7696,        197]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Determining", " ", "whether", " ", "there", " ", "is", " ", "a", " ", 
+     "path", " ", "in", " ", "a", " ", "directed", " ", 
+     RowBox[{"graph", ".", " ", "Quoted"}], " ", "from", " ", 
+     RowBox[{"<<", "Mathematica"}], " ", "Cookbook"}], ">>"}], " ", "*)"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "the", " ", "number", " ", "of", " ", "vertex", " ", "of", " ", "a", " ", 
+    "random", " ", 
+    RowBox[{"graph", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"generating", " ", "the", " ", "graph", " ", 
+     RowBox[{"randomly", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"vertex", "=", 
+     RowBox[{"Range", "[", "n", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"graph", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"tt", "=", 
+         RowBox[{"RandomChoice", "[", "vertex", "]"}]}], ")"}], "\[Rule]", 
+       RowBox[{"RandomChoice", "[", 
+        RowBox[{"Complement", "[", 
+         RowBox[{"vertex", ",", 
+          RowBox[{"{", "tt", "}"}]}], "]"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Floor", "[", 
+        RowBox[{"3", 
+         RowBox[{"n", "/", "2"}]}], "]"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"plot", " ", "the", " ", "graph"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"GraphPlot", "[", 
+    RowBox[{"graph", ",", 
+     RowBox[{"VertexLabels", "\[Rule]", "Automatic"}], ",", 
+     RowBox[{"DirectedEdges", "\[Rule]", "True"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQPemL17M9O145XtJe+RFE9wht/wGiH0w0YdgLEl99
+TRxEu+W3S4LoWIndviA67uvLABCt8ZE5AkRXNOyJA9H/tNjPgGgFbR0wfaxc
+/uo+IL1589wbIFrYXO8HiG49v/0niF41PcxJcecrx1AjBRcQvYj3bACI/nEk
+NhxEMy28HQ2iM1jVU0G0fTJ3rQaQVti6qRVE/zPdPAdEv9p3AEwXtd65HgKk
+lyw7fg9En3JieQOiV7xrBtOvpuzgDAXS+rHqXCD6wicePhAt9zdLAURrLLhS
+dnDWG8cVz02bQfQ01fxeEH361H0wLXFKeRKI9nBQngKiN5guXQiiTSzNF4Ho
+mKd5K0D0q/MhK0E0AOcYxHw=
+  "],
+ CellLabel->"In[1]:=",ExpressionUUID->"f24ae43a-82e6-48d0-b99b-be3bcebe7f4d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"idea", ":", " ", 
+     RowBox[{"at", " ", "every", " ", "step"}]}], ",", " ", 
+    RowBox[{"find", " ", "new", " ", "path"}], ",", " ", 
+    RowBox[{
+    "add", " ", "it", " ", "to", " ", "the", " ", "original", " ", "graph"}], 
+    ",", " ", 
+    RowBox[{"then", " ", "next"}], ","}], "  ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "when", " ", "there", " ", "is", " ", "no", " ", "new", " ", "path", " ", 
+     "found"}], ",", " ", 
+    RowBox[{
+     RowBox[{"check", " ", "whether", " ", "from"}], "\[Rule]", 
+     RowBox[{"to", " ", "is", " ", "in", " ", "the", " ", "final", " ", 
+      RowBox[{"graph", "."}]}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"hasPath", "[", 
+     RowBox[{"graph_", ",", "from_", ",", "from_"}], "]"}], ":=", "True"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hasPath", "[", 
+     RowBox[{"graph_", ",", "from_", ",", "to_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"graphTmp", "=", "graph"}], "}"}], ",", 
+      RowBox[{"MemberQ", "[", 
+       RowBox[{
+        RowBox[{"FixedPoint", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"graphTmp", "=", 
+             RowBox[{"ReplaceAll", "[", 
+              RowBox[{"#", ",", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"a___", ",", 
+                    RowBox[{"from", "\[Rule]", "x_"}], ",", "b___", ",", 
+                    RowBox[{"x_", "\[Rule]", "y_"}], ",", "c___"}], "}"}], 
+                  "|", 
+                  RowBox[{"{", 
+                   RowBox[{"a___", ",", 
+                    RowBox[{"x_", "\[Rule]", "y_"}], ",", "b___", ",", 
+                    RowBox[{"from", "\[Rule]", "x_"}], ",", "c___"}], "}"}]}],
+                  "/;", 
+                 RowBox[{"Not", "@", 
+                  RowBox[{"MemberQ", "[", 
+                   RowBox[{"graphTmp", ",", 
+                    RowBox[{"from", "\[Rule]", "y"}]}], "]"}]}]}], 
+                "\[RuleDelayed]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"from", "\[Rule]", "y"}], ",", 
+                  RowBox[{"x", "\[Rule]", "y"}], ",", 
+                  RowBox[{"from", "\[Rule]", "x"}], ",", "a", ",", "b", ",", 
+                  "c"}], "}"}]}]}], "]"}]}], ")"}], "&"}], ",", "graphTmp"}], 
+         "]"}], ",", 
+        RowBox[{"from", "\[Rule]", "to"}]}], "]"}]}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.586518219061729*^9, 3.5865184680079727`*^9}, {
+   3.586518531370078*^9, 3.586518561416238*^9}, {3.5865186773320007`*^9, 
+   3.58651879540625*^9}, {3.5865203901363373`*^9, 3.5865204521609077`*^9}, {
+   3.586520486015587*^9, 3.5865205219920893`*^9}, {3.5865206022328463`*^9, 
+   3.586520615421474*^9}, {3.586520987584361*^9, 3.5865209888378696`*^9}, {
+   3.586722277579194*^9, 3.586722283673862*^9}, {3.5868285586436377`*^9, 
+   3.586828783124977*^9}, {3.650054460886696*^9, 3.65005449781196*^9}, 
+   3.8392330854244547`*^9, {3.839233420774763*^9, 3.839233481110653*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"f7d6ee89-9b69-4eb7-a2cb-ca6ada0d1f33"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"test", " ", "the", " ", 
+    RowBox[{"results", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Boole", "[", 
+      RowBox[{"hasPath", "[", 
+       RowBox[{"graph", ",", "i", ",", "j"}], "]"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "n"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "n"}], "}"}]}], "]"}], "//", 
+   "MatrixForm"}]}]], "Input",
+ CellChangeTimes->{{3.5865184715352163`*^9, 3.586518509367935*^9}, {
+   3.586518564693651*^9, 3.5865186603129396`*^9}, {3.5865188134565783`*^9, 
+   3.586518819186899*^9}, {3.5865203977650423`*^9, 3.586520404575561*^9}, 
+   3.586520992608138*^9, {3.586722101704596*^9, 3.5867221986857758`*^9}, {
+   3.586722246000971*^9, 3.586722262249769*^9}, {3.586722293627737*^9, 
+   3.5867222945573263`*^9}, {3.586737700679524*^9, 3.586737777584158*^9}, {
+   3.5868288033521757`*^9, 3.5868288289631243`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"41f1d4a5-5dff-4192-8dd4-3f964faeb3cd"]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) \
+(2021\:5e746\:670819\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"14be111e-c61f-496e-b5a2-7a021225510e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 2339, 57, 357, "Input",ExpressionUUID->"f24ae43a-82e6-48d0-b99b-be3bcebe7f4d"],
+Cell[2899, 79, 3329, 76, 327, "Input",ExpressionUUID->"f7d6ee89-9b69-4eb7-a2cb-ca6ada0d1f33"],
+Cell[6231, 157, 1067, 23, 78, "Input",ExpressionUUID->"41f1d4a5-5dff-4192-8dd4-3f964faeb3cd"]
+}
+]
+*)
+
