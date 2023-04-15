@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     72983,       1546]
-NotebookOptionsPosition[     66888,       1424]
-NotebookOutlinePosition[     68229,       1461]
-CellTagsIndexPosition[     68097,       1455]
+NotebookDataLength[     73827,       1569]
+NotebookOptionsPosition[     67506,       1443]
+NotebookOutlinePosition[     68849,       1480]
+CellTagsIndexPosition[     68717,       1474]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -98,7 +98,7 @@ Cell[BoxData[
     Map[ExpandFileName, 
      CurrentValue[$FrontEnd, {"NotebookSecurityOptions", "TrustedPath"}]]], 
    StandardForm],
-  ImageSizeCache->{331., {31.42743643933907, 37.73256356066093}}]], "Output",
+  ImageSizeCache->{331., {31.42743637626525, 37.73256362373475}}]], "Output",
  CellChangeTimes->{{3.8893250591119366`*^9, 3.8893250592513027`*^9}, 
    3.8894037384225473`*^9},
  CellLabel->"Out[3]=",ExpressionUUID->"3e222277-2cfc-4a24-bc73-0fcbd27c9177"]
@@ -1419,11 +1419,30 @@ Cell[BoxData[
   3.8852193136707873`*^9}},ExpressionUUID->"ef1603b1-3304-4a93-ac49-\
 f46e285dc47a"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["7. \:5bfc\:51fapdf", "Section",
+ CellChangeTimes->{{3.89058725893744*^9, 
+  3.8905872684019737`*^9}},ExpressionUUID->"3fddf383-c3c1-448d-a0ed-\
+8b7665bc7b7e"],
+
+Cell[TextData[{
+ "\:6309\:7167\:5982\:4e0b\:7684\:6d41\:7a0b\:6253\:5370\:ff08\:4e0d\:7136\
+\:5c31\:4f1a\:4e71\:7801\:ff09\:ff1a\n\n",
+ StyleBox["\:6587\:4ef6 ->  \:6253\:5370 -> \
+\:ff08\:6253\:5370\:673a\:ff09Microsoft Print to pdf  -> \:6253\:5370",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.8905872735029445`*^9, 
+  3.890587378285128*^9}},ExpressionUUID->"c4936899-3c35-401d-886b-\
+9c650ca7fe72"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1141.2, 604.8},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1440., 777.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 WindowOpacity->1,
 ShowCellTags->True,
 Magnification:>1.1 Inherited,
@@ -1454,8 +1473,8 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"\:52a0\:6cd5\:6807\:7b7e", 67459, 1441},
- {"\:4e58\:6cd5\:6807\:7b7e", 67797, 1447}
+ {"\:52a0\:6cd5\:6807\:7b7e", 68079, 1460},
+ {"\:4e58\:6cd5\:6807\:7b7e", 68417, 1466}
  }
 *)
 (*NotebookFileOutline
@@ -1492,7 +1511,7 @@ Cell[8574, 213, 31410, 656, 187, "Output",ExpressionUUID->"e0838313-4c8a-433a-89
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[40021, 874, 210, 3, 55, "Code",ExpressionUUID->"84ae3c01-436f-4eb7-8903-39a38f0b2856"],
-Cell[40234, 879, 4150, 85, 314, "Output",ExpressionUUID->"118ccf9f-09e7-4de8-914b-83c02cba4d44"]
+Cell[40234, 879, 4150, 85, 251, "Output",ExpressionUUID->"118ccf9f-09e7-4de8-914b-83c02cba4d44"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -1546,6 +1565,10 @@ Cell[65765, 1394, 231, 4, 50, "Subsection",ExpressionUUID->"58654c58-e0bd-436e-9
 Cell[65999, 1400, 317, 8, 95, "Text",ExpressionUUID->"4b221be3-1208-4591-8a1b-eb7dd55b58ab"],
 Cell[66319, 1410, 529, 9, 69, "Text",ExpressionUUID->"ef1603b1-3304-4a93-ac49-f46e285dc47a"]
 }, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66897, 1425, 164, 3, 57, "Section",ExpressionUUID->"3fddf383-c3c1-448d-a0ed-8b7665bc7b7e"],
+Cell[67064, 1430, 414, 9, 95, "Text",ExpressionUUID->"c4936899-3c35-401d-886b-9c650ca7fe72"]
 }, Open  ]]
 }, Open  ]]
 }
