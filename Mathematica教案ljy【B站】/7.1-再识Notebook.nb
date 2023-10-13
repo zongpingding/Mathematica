@@ -1,0 +1,961 @@
+(***********************************************************************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used on any computer system with Mathematica 4.0,
+MathReader 4.0, or any compatible application. The data for the notebook 
+starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do one of 
+the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing the 
+word CacheID, otherwise Mathematica-compatible applications may try to 
+use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+***********************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     22844,        808]*)
+(*NotebookOutlinePosition[     23701,        841]*)
+(*  CellTagsIndexPosition[     23634,        835]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    RowBox[{
+      StyleBox["7.1",
+        FontSize->18], 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:518d\:8bc6",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312",
+            FontSize->18], 
+          StyleBox["Notebook",
+            FontSize->18]}]]}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".1", 
+      StyleBox[
+        RowBox[{"Mathematica", 
+          StyleBox["\:7684\:7ed3\:6784",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]], "Input",
+  FontSize->14,
+  CellTags->"1"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox[
+        RowBox[{
+          StyleBox["Mathematica",
+            "Text"], 
+          StyleBox["\:662f\:6a21\:5757\:5316\:7684\:7cfb\:7edf\:8f6f\:4ef6",
+            "Text",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], 
+      StyleBox[",",
+        "Text"], 
+      StyleBox[
+        RowBox[{
+          RowBox[{
+            StyleBox["\:7531\:4e24\:4e2a\:90e8\:5206\:7ec4\:6210",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ".", 
+            StyleBox["\:6838",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], \((kernel)\)}],
+        "Text"], 
+      StyleBox[",",
+        "Text"], 
+      RowBox[{
+        StyleBox[
+          RowBox[{
+            
+            StyleBox["\:8d1f\:8d23\:6267\:884c\:6240\:6709\:7684\:8ba1\:7b97",
+              
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ".", 
+            StyleBox["\:524d\:7aef",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}],
+          "Text"], 
+        StyleBox[\((front\ end)\),
+          "Text"], 
+        StyleBox["\:8d1f\:8d23\:4e0e\:7528\:6237\:7684\:4ea4\:6d41",
+          "Text",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]}]], "Input"],
+
+Cell[BoxData[{
+    RowBox[{
+      StyleBox["\:57fa\:4e8e\:6587\:672c\:7684\:754c\:9762",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ",", \(MathKernel . exe\)}], "\n", 
+    RowBox[{
+      StyleBox[
+        RowBox[{"Dos", 
+          StyleBox["\:4e0b\:57fa\:4e8e\:6587\:672c\:7684\:754c\:9762",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ",", \(Math . exe\)}], "\n", 
+    RowBox[{
+      StyleBox["\:901a\:4fe1\:6807\:51c6\:534f\:8bae",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ",", 
+      RowBox[{
+        StyleBox["\:7528\:4e8e\:548c\:5176\:4ed6\:7a0b\:5e8f\:4ea4\:6d41",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ".", "mathlink"}]}]}], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".2", 
+      StyleBox["\:5355\:5143\:7ec4",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"1.", 
+      StyleBox["\:5355\:5143\:4e0e\:5355\:5143\:7ec4",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], \((cell)\)}]], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(a = 1\), "\[IndentingNewLine]", 
+    \(b = 2\), "\[IndentingNewLine]", 
+    \(a + b\)}], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"],
+
+Cell[BoxData[
+    \(2\)], "Output"],
+
+Cell[BoxData[
+    \(3\)], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"2.", 
+      StyleBox["\:5355\:5143\:7ec4\:7684\:6253\:5f00\:4e0e\:5173\:95ed",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(a = 1\), "\[IndentingNewLine]", 
+    \(b = 2\), "\[IndentingNewLine]", 
+    \(a + b\)}], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"],
+
+Cell[BoxData[
+    \(2\)], "Output"],
+
+Cell[BoxData[
+    \(3\)], "Output"]
+}, Open  ]]
+}, Closed]],
+
+Cell[BoxData[
+    RowBox[{"3.", 
+      StyleBox["\:5355\:5143\:7ec4\:7684\:5206\:5272\:4e0e\:5408\:5e76",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(a = 1\), "\n", 
+    \(b = 2\), "\n", 
+    \(a + b\)}], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"],
+
+Cell[BoxData[
+    \(2\)], "Output"],
+
+Cell[BoxData[
+    \(3\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["4.",
+        FontColor->RGBColor[0, 0, 1]], 
+      StyleBox[
+        "\:5355\:5143\:7684\:624b\:5de5\:5206\:7ec4\:4e0e\:89e3\:6563\:5206\
+\:7ec4",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312",
+        FontColor->RGBColor[0, 0, 1]]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a = 1\)], "Input"],
+
+Cell[BoxData[{
+    \(b = 2\), "\n", 
+    \(a + b\)}], "Input"]
+}, Open  ]],
+
+Cell[BoxData[{
+    \(1\), "\n", 
+    \(2\), "\n", 
+    \(3\)}], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".3", 
+      StyleBox[
+        "\:6570\:5b66\:8868\:8fbe\:5f0f\:7684\:8f93\:5165\:548c\:8f93\:51fa\
+\:683c\:5f0f",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[{
+    RowBox[{
+      StyleBox[\(StandardForm[expr]\),
+        FontColor->RGBColor[1, 0, 0]], 
+      StyleBox["\:6807\:51c6\:683c\:5f0f\:8f93\:51fa\:8868\:8fbe\:5f0f",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox[\(TraditionalForm[expr]\),
+          FontColor->RGBColor[1, 0, 0]], 
+        StyleBox[
+          RowBox[{
+            
+            StyleBox["\:4f20\:7edf\:683c\:5f0f\:8f93\:51fa\:8868\:8fbe\:5f0f",
+              
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "expr"}]]}], ",", 
+      StyleBox["\:6309\:7167\:6570\:5b66\:4e60\:60ef",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox["\:51fd\:6570\:4f7f\:7528\:56ed\:62ec\:53f7",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox["\:51fd\:6570\:540d\:5c0f\:5199",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox[\(InputForm[expr]\),
+        FontColor->RGBColor[1, 0, 0]], 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:8f93\:5165\:683c\:5f0f\:8f93\:51fa\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "expr"}]]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox[\(OutForm[expr]\),
+        FontColor->RGBColor[1, 0, 0]], 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:8f93\:51fa\:683c\:5f0f\:8f93\:51fa\:8868\:8fbe\:5f0f",
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "expr"}]]}]}], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".4", 
+      StyleBox["\:6587\:6863\:683c\:5f0f\:7684\:8bbe\:7f6e",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[
+    RowBox[{"1.", 
+      StyleBox["\:8bbe\:7f6e\:5355\:5143\:683c\:7684\:683c\:5f0f",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[BoxData[{
+    \(Format \[Rule] Style\), "\[IndentingNewLine]", 
+    \(Format \[Rule] Text\ Alignment\ \[IndentingNewLine] ... \)}], "Input"],
+
+Cell[BoxData[
+    StyleBox[\(2.  \:751f\:6210\:5404\:79cd\:98ce\:683c\:7684\:6587\:6863\),
+      FontFamily->
+        "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_GB2312"]\
+], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[BoxData[
+    \(Format \[Rule] Style\ Sheet\)], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".5", 
+      StyleBox[
+        RowBox[{"Notebook", 
+          StyleBox["\:4e2d\:7684\:52a8\:6001\:5143\:7d20",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox[
+        RowBox[{
+          StyleBox["\:53ef\:4ee5\:5728",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Notebook", 
+          StyleBox["\:4e2d\:5b89\:653e\:6309\:94ae",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ",", 
+      RowBox[{
+        RowBox[{
+          
+          StyleBox[
+            "\:5355\:51fb\:53ef\:6267\:884c\:9884\:5148\:8bbe\:5b9a\:7684\
+\:64cd\:4f5c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ".", "\[IndentingNewLine]", 
+          StyleBox["Input",
+            FontColor->RGBColor[1, 0, 0]]}], 
+        StyleBox["\[Rule]",
+          FontColor->RGBColor[1, 0, 0]], 
+        StyleBox[\(Create\ Button\),
+          FontColor->RGBColor[1, 0, 0]]}]}]], "Input"],
+
+Cell[BoxData[
+    ButtonBox[\(Date[]\),
+      ButtonStyle->"Evaluate"]], "Input",
+  Active->True],
+
+Cell[BoxData[
+    \({2004, 12, 17, 11, 48, 54}\)], "Input"],
+
+Cell[BoxData[
+    \({2002, 12, 16, 9, 33, 
+      22.9725904` {2004, 12, 17, 11, 49, 43}}\)], "Input"],
+
+Cell[BoxData[
+    \({2002, 12, 16, 9, 33, 25.0856288`9.15199991256022}\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox[
+        ButtonBox[\(Date[]\),
+          ButtonStyle->"Evaluate"],
+        Active->True], \({2002, 12, 16, 9, 35, 35}\)}]], "Input"],
+
+Cell[BoxData[
+    \({2002, 12, 16, 9, 34, 39.1020592`9.344774511682136}\)], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".6", 
+      StyleBox["\:5efa\:7acb\:8d85\:7ea7\:94fe\:63a5",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["\:5148\:5efa\:7acb\:6807\:8bc6",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ",", 
+      StyleBox["\:518d\:5efa\:7acb\:94fe\:63a5",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input"],
+
+Cell[BoxData[
+    StyleBox[
+      RowBox[{"\:94fe\:63a5\:5230", 
+        ButtonBox["\:7b2c\:4e00\:5c0f\:8282",
+          ButtonData:>"1",
+          ButtonStyle->"Hyperlink"]}],
+      FontFamily->
+        "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_GB2312"]\
+], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.1", ".7", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:4ea7\:751f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "C", 
+          StyleBox["\:548c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Fortran", 
+          StyleBox["\:7684\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]], "Input",
+  FontSize->14,
+  CellTags->"1"],
+
+Cell[BoxData[
+    RowBox[{"1.", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:751f\:6210C\:548c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Fortran", 
+          StyleBox["\:7684\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[BoxData[{
+    RowBox[{
+      StyleBox[\(CForm[expr]\),
+        FontColor->RGBColor[1, 0, 0]], 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:5c06\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "expr"}]], " ", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:7ffb\:8bd1\:6210",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "C", 
+          StyleBox["\:8bed\:8a00\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox["FortranForm",
+          FontColor->RGBColor[1, 0, 0]], "[", "expr", "]"}], 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:5c06\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "expr"}]], " ", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:7ffb\:8bd1\:6210",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Fortran", 
+          StyleBox["\:8bed\:8a00\:8868\:8fbe\:5f0f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]}], "Input"],
+
+Cell[BoxData[
+    StyleBox[\(\:53ea\:80fd\:8f6c\:6362\:542b\:6709\:521d\:7b49\:51fd\:6570\
+\:7684\:8868\:8fbe\:5f0f, \:542b\:6709\:5fae\:79ef\:5206\:7684\:8868\:8fbe\
+\:5f0f\:65e0\:6cd5\:8f6c\:6362\),
+      FontFamily->
+        "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_GB2312"]\
+], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Sin[x]^2 + 2  Log[x] - \@\(x^3 + 1\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\@\(1 + x\^3\)\) + 2\ Log[x] + Sin[x]\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(CForm[%]\)], "Input"],
+
+Cell["\<\
+-Sqrt(1 + Power(x,3)) + 2*Log(x) + 
+   Power(Sin(x),2)\
+\>", "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FortranForm[%47]\)], "Input"],
+
+Cell["-Sqrt(1 + x**3) + 2*Log(x) + Sin(x)**2", "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    RowBox[{"2.", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:5c06\:8f93\:51fa\:4f20\:9001\:5230",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "C", 
+          StyleBox["\:548c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Fortran", 
+          StyleBox["\:7684\:6587\:4ef6\:4e2d",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]], "Input",
+  FontColor->RGBColor[0, 0, 1]],
+
+Cell[BoxData[{
+    StyleBox[\(Splice["\<infile\>", "\<outfile\>"]\),
+      FontColor->RGBColor[1, 0, 0]], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox[
+        RowBox[{
+          StyleBox["\:4ece\:6587\:4ef6",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "inflie", 
+          StyleBox["\:8bfb\:53d6\:6587\:672c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ",", 
+      RowBox[{
+        StyleBox["\:5c06\:6807\:8bb0",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "<", 
+        RowBox[{"*", 
+          StyleBox["\:548c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "*"}], ">", 
+        StyleBox[
+          RowBox[{
+            
+            StyleBox[
+              "\:4e4b\:95f4\:7684\:5185\:5bb9\:6c42\:503c\:5e76\:8f6c\:6362\
+\:6210",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "C", 
+            StyleBox["\:6216",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Fortran", 
+            StyleBox["\:7684\:8868\:8fbe\:5f0f",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}], ",", 
+      RowBox[{
+        StyleBox[
+          RowBox[{
+            StyleBox["\:7136\:540e\:8fde\:540c",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "infile", 
+            
+            StyleBox["\:7684\:5176\:4ed6\:6587\:672c\:4e00\:8d77\:5199\:5165",
+              
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "outfile"}]], ".", 
+        StyleBox[
+          RowBox[{
+            StyleBox["\:5982\:679c",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "infile", 
+            StyleBox["\:6709\:6807\:51c6\:6269\:5c55\:540d",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ".", 
+        StyleBox[
+          RowBox[{"mc", 
+            StyleBox["\:6216",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ".", "mf"}], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:5219\:8868\:793a\:8f6c\:6362\:6210",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "C", 
+          StyleBox["\:6216",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Fortran", 
+          StyleBox["\:6587\:4ef6",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ",", 
+      StyleBox["\:7b2c\:4e8c\:4e2a\:53c2\:6570\:53ef\:4ee5\:7701\:7565",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:8f93\:51fa\:6587\:4ef6\:540d\:4e0e",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "infile", 
+          StyleBox["\:540c\:540d",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ",", 
+      RowBox[{
+        StyleBox["\:5c06\:6269\:5c55\:540d\:6539\:4e3a",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], ".", 
+        StyleBox[
+          RowBox[{"c", 
+            StyleBox["\:6216",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ".", "f"}]}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SetDirectory["\<G:\\\>"]\)], "Input"],
+
+Cell[BoxData[
+    \("G:\\"\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(!! test.mc\)\)], "Input"],
+
+Cell["\<\
+#include\"Mdefs.h\"
+double f(x)
+double x;
+{
+double y;
+y=<* Integrate[Sin[x]^5,x] *>;
+return(2*y-1);
+}\
+\>", "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Splice["\<test.mc\>"]\)], "Input"],
+
+Cell[BoxData[
+    \("test.mc"\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(!! test.c\)\)], "Input"],
+
+Cell["\<\
+#include\"Mdefs.h\"
+double f(x)
+double x;
+{
+double y;
+y=(-5*Cos(x))/8. + (5*Cos(3*x))/48. - Cos(5*x)/80.;
+return(2*y-1);
+}\
+\>", "Print"]
+}, Open  ]]
+},
+FrontEndVersion->"4.0 for Microsoft Windows",
+ScreenRectangle->{{0, 800}, {0, 527}},
+CellGrouping->Manual,
+WindowSize->{790, 500},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification->1.5
+]
+
+
+(***********************************************************************
+Cached data follows.  If you edit this Notebook file directly, not using
+Mathematica, you must remove the line containing CacheID at the top of 
+the file.  The cache data will then be recreated when you save this file 
+from within Mathematica.
+***********************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{
+  "1"->{
+    Cell[2086, 64, 302, 10, 45, "Input",
+      CellTags->"1"],
+    Cell[13786, 485, 627, 20, 45, "Input",
+      CellTags->"1"]}
+  }
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{
+  {"1", 23480, 826}
+  }
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1717, 49, 366, 13, 48, "Input"],
+Cell[2086, 64, 302, 10, 45, "Input",
+  CellTags->"1"],
+Cell[2391, 76, 1638, 53, 68, "Input"],
+Cell[4032, 131, 933, 24, 94, "Input"],
+Cell[4968, 157, 52, 1, 68, "Input"],
+Cell[5023, 160, 209, 6, 45, "Input"],
+
+Cell[CellGroupData[{
+Cell[5257, 170, 248, 6, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[5530, 180, 118, 3, 94, "Input"],
+Cell[5651, 185, 35, 1, 41, "Output"],
+Cell[5689, 188, 35, 1, 41, "Output"],
+Cell[5727, 191, 35, 1, 41, "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5811, 198, 254, 6, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[6090, 208, 118, 3, 94, "Input"],
+Cell[6211, 213, 35, 1, 41, "Output"],
+Cell[6249, 216, 35, 1, 41, "Output"],
+Cell[6287, 219, 35, 1, 41, "Output"]
+}, Open  ]]
+}, Closed]],
+Cell[6349, 224, 254, 6, 35, "Input"],
+
+Cell[CellGroupData[{
+Cell[6628, 234, 84, 3, 94, "Input"],
+Cell[6715, 239, 35, 1, 41, "Output"],
+Cell[6753, 242, 35, 1, 41, "Output"],
+Cell[6791, 245, 35, 1, 41, "Output"]
+}, Open  ]],
+Cell[6841, 249, 344, 10, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[7210, 263, 38, 1, 42, "Input"],
+Cell[7251, 266, 62, 2, 68, "Input"]
+}, Open  ]],
+Cell[7328, 271, 72, 3, 94, "Input"],
+Cell[7403, 276, 52, 1, 68, "Input"],
+Cell[7458, 279, 280, 8, 45, "Input"],
+Cell[7741, 289, 2175, 59, 146, "Input"],
+Cell[9919, 350, 233, 6, 45, "Input"],
+Cell[10155, 358, 248, 6, 42, "Input"],
+Cell[10406, 366, 145, 2, 94, "Input"],
+Cell[10554, 370, 233, 5, 39, "Input"],
+Cell[10790, 377, 60, 1, 42, "Input"],
+Cell[10853, 380, 52, 1, 68, "Input"],
+Cell[10908, 383, 300, 9, 45, "Input"],
+Cell[11211, 394, 971, 29, 68, "Input"],
+Cell[12185, 425, 97, 3, 45, "Input"],
+Cell[12285, 430, 59, 1, 42, "Input"],
+Cell[12347, 433, 101, 2, 42, "Input"],
+Cell[12451, 437, 83, 1, 42, "Input"],
+Cell[12537, 440, 174, 5, 45, "Input"],
+Cell[12714, 447, 84, 1, 42, "Input"],
+Cell[12801, 450, 52, 1, 68, "Input"],
+Cell[12856, 453, 227, 6, 45, "Input"],
+Cell[13086, 461, 352, 9, 42, "Input"],
+Cell[13441, 472, 287, 8, 46, "Input"],
+Cell[13731, 482, 52, 1, 68, "Input"],
+Cell[13786, 485, 627, 20, 45, "Input",
+  CellTags->"1"],
+Cell[14416, 507, 465, 14, 42, "Input"],
+Cell[14884, 523, 1488, 45, 68, "Input"],
+Cell[16375, 570, 311, 6, 39, "Input"],
+
+Cell[CellGroupData[{
+Cell[16711, 580, 69, 1, 47, "Input"],
+Cell[16783, 583, 77, 1, 46, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16897, 589, 41, 1, 42, "Input"],
+Cell[16941, 592, 80, 3, 81, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17058, 600, 49, 1, 42, "Input"],
+Cell[17110, 603, 56, 0, 59, "Output"]
+}, Open  ]],
+Cell[17181, 606, 643, 19, 42, "Input"],
+Cell[17827, 627, 4293, 127, 198, "Input"],
+
+Cell[CellGroupData[{
+Cell[22145, 758, 57, 1, 42, "Input"],
+Cell[22205, 761, 40, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22282, 767, 47, 1, 42, "Input"],
+Cell[22332, 770, 126, 9, 188, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22495, 784, 54, 1, 42, "Input"],
+Cell[22552, 787, 43, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22632, 793, 46, 1, 42, "Input"],
+Cell[22681, 796, 147, 9, 188, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+
+(***********************************************************************
+End of Mathematica Notebook file.
+***********************************************************************)
+

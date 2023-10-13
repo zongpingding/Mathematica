@@ -1,0 +1,1215 @@
+(***********************************************************************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used on any computer system with Mathematica 4.0,
+MathReader 4.0, or any compatible application. The data for the notebook 
+starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do one of 
+the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing the 
+word CacheID, otherwise Mathematica-compatible applications may try to 
+use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+***********************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     25218,        972]*)
+(*NotebookOutlinePosition[     25911,        997]*)
+(*  CellTagsIndexPosition[     25867,        993]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    RowBox[{
+      StyleBox["7.3",
+        FontSize->18], 
+      StyleBox["Mathematica",
+        FontSize->18], 
+      StyleBox[" ",
+        FontSize->18], 
+      StyleBox["\:7684\:7cfb\:7edf\:53d8\:91cf",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312",
+        FontSize->18]}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.3", ".1", 
+      StyleBox["\:67e5\:770b\:7cfb\:7edf\:53d8\:91cf",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox["?",
+        FontColor->RGBColor[1, 0, 0]], 
+      RowBox[{
+        StyleBox["$",
+          FontColor->RGBColor[1, 0, 0]], 
+        StyleBox["*",
+          FontColor->RGBColor[1, 0, 0]], 
+        StyleBox["\:663e\:793a\:5168\:90e8\:7684\:7cfb\:7edf\:53d8\:91cf",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(?$*\)\)], "Input"],
+
+Cell["\<\
+$Aborted
+$AnimationDisplayFunction
+$AnimationFunction
+$BatchInput
+$BatchOutput
+$BoxForms
+$ByteOrdering
+$CharacterEncoding
+$CommandLine
+$ConditionHold
+$Context
+$ContextPath
+$CreationDate
+$CurrentLink
+$DefaultFont
+$DefaultPath
+$Display
+$DisplayFunction
+$DSolveIntegrals
+$DumpDates
+$DumpSupported
+$Echo
+$Epilog
+$ExportFormats
+$Failed
+$FormatType
+$FrontEnd
+$HistoryLength
+$HomeDirectory
+$IgnoreEOF
+$ImportFormats
+$InitialDirectory
+$Input
+$Inspector
+$InstallationDate
+$InterfaceEnvironment
+$IterationLimit
+$Language
+$LaunchDirectory
+$LicenseExpirationDate
+$LicenseID
+$LicenseProcesses
+$LicenseServer
+$Line
+$Linked
+$LinkSupported
+$MachineDomain
+$MachineEpsilon
+$MachineID
+$MachineName
+$MachinePrecision
+$MachineType
+$MaxExtraPrecision
+$MaxLicenseProcesses
+$MaxMachineNumber
+$MaxNumber
+$MaxPrecision
+$MaxRootDegree
+$MessageList
+$MessagePrePrint
+$Messages
+$MinMachineNumber
+$MinNumber
+$MinPrecision
+$ModuleNumber
+$NetworkLicense
+$NewMessage
+$NewSymbol
+$Notebooks
+$NumberBits
+$NumberMarks
+$Off
+$OperatingSystem
+$Output
+$OutputForms
+$Packages
+$ParentLink
+$ParentProcessID
+$PasswordFile
+$Path
+$PathnameSeparator
+$PipeSupported
+$Post
+$Pre
+$PreferencesDirectory
+$PrePrint
+$PreRead
+$PrintForms
+$PrintLiteral
+$ProcessID
+$ProcessorType
+$ProgramName
+$PSDirectDisplay
+$RandomState
+$RasterFunction
+$RecursionLimit
+$ReleaseNumber
+$Remote
+$RootDirectory
+$SessionID
+$SoundDisplay
+$SoundDisplayFunction
+$SuppressInputFormHeads
+$SyntaxHandler
+$System
+$SystemCharacterEncoding
+$SystemID
+$TemporaryPrefix
+$TextStyle
+$TimeUnit
+$TopDirectory
+$TraceOff
+$TraceOn
+$TracePattern
+$TracePostAction
+$TracePreAction
+$Urgent
+$UserName
+$Version
+$VersionNumber\
+\>", "Print",
+  CellMargins->{{20, Inherited}, {Inherited, Inherited}},
+  ShowCellLabel->False,
+  CellFrameMargins->{{Inherited, Inherited}, {14, 14}},
+  Background->RGBColor[0.964706, 0.929412, 0.839216],
+  ButtonBoxOptions->{Active->True}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(?$Path\)\)], "Input"],
+
+Cell[BoxData[
+    \("$Path gives the default list of directories to search in attempting to \
+find an external file."\)], "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($Path\)], "Input"],
+
+Cell[BoxData[
+    \({"C:\\Program Files\\Common Files\\Mathematica\\4.0\\Kernel", 
+      "C:\\Program Files\\Common Files\\Mathematica\\4.0\\AddOns\\Autoload", 
+      "C:\\Program Files\\Common \
+Files\\Mathematica\\4.0\\AddOns\\Applications", ".", "C:\\", 
+      "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\AddOns\\StandardPackages", 
+      "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\AddOns\\StandardPackages\\\
+StartUp", "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\AddOns\\Autoload", 
+      "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\AddOns\\Applications", 
+      "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\AddOns\\ExtraPackages", 
+      "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\SystemFiles\\Graphics\\\
+Packages", 
+      "C:\\PROGRA~1\\WOLFRA~1\\MATHEM~1\\4.0\\Configuration\\Kernel"}\)], \
+"Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    RowBox[{"7.3", ".2", 
+      StyleBox[
+        "\:901a\:8fc7\:7cfb\:7edf\:53d8\:91cf\:4e86\:89e3\:7cfb\:7edf\:7684\
+\:6027\:80fd",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[{
+    RowBox[{
+      StyleBox["$TimeUnit",
+        FontColor->RGBColor[1, 0, 0]], 
+      StyleBox[
+        RowBox[{
+          StyleBox[" ",
+            FontColor->RGBColor[1, 0, 0]], "   "}]], 
+      StyleBox[
+        "\:5728\:4e00\:4e2a\:8ba1\:7b97\:673a\:7cfb\:7edf\:4e0a\:4ee5\:79d2\
+\:4e3a\:5355\:4f4d\:7684\:6700\:5c0f\:65f6\:95f4\:95f4\:9694",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox["$MaxNumber",
+        FontColor->RGBColor[1, 0, 0]], "   ", 
+      StyleBox[
+        "\:5728\:4e00\:4e2a\:8ba1\:7b97\:673a\:7cfb\:7edf\:4e0a\:80fd\:8868\
+\:793a\:7684\:6700\:5927\:4efb\:610f\:7cbe\:5ea6\:6570\:7684\:91cf\:7ea7",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox["$MinNumber",
+        FontColor->RGBColor[1, 0, 0]], "   ", 
+      StyleBox[
+        "\:5728\:4e00\:4e2a\:8ba1\:7b97\:673a\:7cfb\:7edf\:4e0a\:80fd\:8868\
+\:793a\:7684\:6700\:5c0f\:4efb\:610f\:7cbe\:5ea6\:6570\:7684\:91cf\:7ea7",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox["$MaxMachineNumber",
+        FontColor->RGBColor[1, 0, 0]], "  ", 
+      StyleBox[
+        "\:5728\:4e00\:4e2a\:8ba1\:7b97\:673a\:7cfb\:7edf\:4e0a\:80fd\:8868\
+\:793a\:7684\:6700\:5927\:673a\:5668\:7cbe\:5ea6\:6570",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox["$MinMachineNumber",
+        FontColor->RGBColor[1, 0, 0]], "  ", 
+      StyleBox[
+        "\:5728\:4e00\:4e2a\:8ba1\:7b97\:673a\:7cfb\:7edf\:4e0a\:80fd\:8868\
+\:793a\:7684\:6700\:5c0f\:673a\:5668\:7cbe\:5ea6\:6570",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox["$MachinePrecision",
+          FontColor->RGBColor[1, 0, 0]], "   ", 
+        StyleBox["\:673a\:5668\:7cbe\:5ea6\:6570\:7684\:7cbe\:5ea6",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:5178\:578b\:503c\:4e3a",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+          StyleBox["16",
+            FontFamily->"Courier New"]}]]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox["$MaxPrecision",
+          FontColor->RGBColor[1, 0, 0]], "  ", 
+        StyleBox[
+          "\:4efb\:610f\:7cbe\:5ea6\:6570\:7684\:6700\:5927\:7cbe\:5ea6",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:9ed8\:8ba4\:503c\:4e3a",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "1000000"}]]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox["$MinPrecision",
+          FontColor->RGBColor[1, 0, 0]], "   ", 
+        StyleBox[
+          "\:4efb\:610f\:7cbe\:5ea6\:6570\:7684\:6700\:5c0f\:7cbe\:5ea6",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], ",", 
+      RowBox[{
+        StyleBox[
+          RowBox[{
+            StyleBox["\:9ed8\:8ba4\:503c\:4e3a",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+            StyleBox["0",
+              FontFamily->"Courier New"]}]], 
+        StyleBox[".",
+          FontFamily->"Courier New"]}]}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($TimeUnit\)], "Input"],
+
+Cell[BoxData[
+    \(1\/1000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($MaxNumber\)], "Input"],
+
+Cell[BoxData[
+    \(1.9202246726923565854204690606`15.954589770191005*^646456887\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($MinNumber\)], "Input"],
+
+Cell[BoxData[
+    \(5.2077239409589238546156053328`15.954589770191005*^-646456888\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($MaxMachineNumber\)], "Input"],
+
+Cell[BoxData[
+    \(1.7976931348623157`*^308\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($MinMachineNumber\)], "Input"],
+
+Cell[BoxData[
+    \(2.2250738585072014`*^-308\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \($MachinePrecision\), "\[IndentingNewLine]", 
+    \($MaxPrecision\), "\[IndentingNewLine]", 
+    \($MinPrecision\)}], "Input"],
+
+Cell[BoxData[
+    \(16\)], "Output"],
+
+Cell[BoxData[
+    \(1.`*^6\)], "Output"],
+
+Cell[BoxData[
+    \(0.`\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    RowBox[{"7.3", ".3", 
+      StyleBox["\:4fee\:6539\:7cfb\:7edf\:53d8\:91cf\:7684\:9ed8\:8ba4\:503c",
+        
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[{
+    RowBox[{
+      RowBox[{
+        StyleBox["$RecursionLimit",
+          FontColor->RGBColor[1, 0, 0]], " ", 
+        StyleBox["\:6c42\:503c\:5806\:6808\:7684\:6700\:5927\:6df1\:5ea6",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:9ed8\:8ba4\:503c\:4e3a",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "256"}]]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox["$IterationLimit",
+        FontColor->RGBColor[1, 0, 0]], " ", 
+      StyleBox[
+        RowBox[{
+          
+          StyleBox[
+            "\:6c42\:503c\:94fe\:7684\:6700\:5927\:957f\:5ea6\:9ed8\:8ba4\
+\:503c\:662f",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "4096"}]]}], "\[IndentingNewLine]", 
+    RowBox[{
+      StyleBox[
+        RowBox[{
+          StyleBox["\:91cd\:65b0\:8d4b\:503c\:5fc5\:987b\:5927\:4e8e",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "20"}]], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:53ef\:4ee5\:4e3a",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "Infinity"}]]}]}], "Input"],
+
+Cell[BoxData[{
+    \(f[n_] := 2  f[n - 1]\), "\[IndentingNewLine]", 
+    \(g[n_] := g[n - 1]\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(f[3]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\($RecursionLimit::"reclim"\), \(\(:\)\(\ \)\), "\<\"Recursion \
+depth of \\!\\(256\\) exceeded. \\!\\(\\*ButtonBox[\\\"More\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"$RecursionLimit::reclim\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(578960446186580977117854925043439539266349923328202820197287920039565648\
+19968\ Hold[f[\(-251\) - 1]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g[5]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\($IterationLimit::"itlim"\), \(\(:\)\(\ \)\), "\<\"Iteration \
+limit of \\!\\(4096\\) exceeded. \\!\\(\\*ButtonBox[\\\"More\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"$IterationLimit::itlim\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(Hold[g[\(-4090\) - 1]]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(f[0] = 1; g[0] = 1;\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(f[254]\)], "Input"],
+
+Cell[BoxData[
+    \(289480223093290488558927462521719769633174961664101410098643960019782824\
+09984\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(f[255]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\($RecursionLimit::"reclim"\), \(\(:\)\(\ \)\), "\<\"Recursion \
+depth of \\!\\(256\\) exceeded. \\!\\(\\*ButtonBox[\\\"More\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"$RecursionLimit::reclim\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(578960446186580977117854925043439539266349923328202820197287920039565648\
+19968\ Hold[f[1 - 1]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g[4094]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g[4095]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\($IterationLimit::"itlim"\), \(\(:\)\(\ \)\), "\<\"Iteration \
+limit of \\!\\(4096\\) exceeded. \\!\\(\\*ButtonBox[\\\"More\[Ellipsis]\\\", \
+ButtonStyle->\\\"RefGuideLinkText\\\", ButtonFrame->None, \
+ButtonData:>\\\"$IterationLimit::itlim\\\"]\\)\"\>"}]], "Message"],
+
+Cell[BoxData[
+    \(Hold[1]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($RecursionLimit = 1000\)], "Input"],
+
+Cell[BoxData[
+    \(1000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(f[0] = 1;\)\), "\[IndentingNewLine]", 
+    \(\(f[n_] := 2  f[n - 1];\)\), "\[IndentingNewLine]", 
+    \(f[300]\)}], "Input"],
+
+Cell[BoxData[
+    \(203703597633448608626844568840937816105146839366593625063614044935438129\
+9763336706183397376\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($IterationLimit = Infinity\)], "Input"],
+
+Cell[BoxData[
+    \(\[Infinity]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(g[0] = 1;\)\), "\[IndentingNewLine]", 
+    \(\(g[n_] := g[n - 1];\)\), "\[IndentingNewLine]", 
+    \(g[100000]\)}], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    RowBox[{
+      StyleBox[
+        RowBox[{
+          StyleBox["$MaxExtraPrecision",
+            FontColor->RGBColor[1, 0, 0]], 
+          StyleBox["\:9644\:52a0\:7cbe\:5ea6\:7684\:6700\:5927\:503c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:9ed8\:8ba4\:503c\:4e3a",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "50"}]]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(N[Sin[10^100], 30]\)], "Input"],
+
+Cell[BoxData[
+    \($MaxExtraPrecision::"meprec" \(\(:\)\(\ \)\) 
+      "In increasing internal precision while attempting to evaluate \!\(Sin[\
+\(\(10000000000000 \(\(\[LeftSkeleton] 73 \[RightSkeleton]\)\) 00000000000000\
+\)\)]\), the limit $MaxExtraPrecision = \!\(49.99999999999999`\) was reached. \
+Increasing the value of $MaxExtraPrecision may help resolve the uncertainty."\
+\)], "Message"],
+
+Cell[BoxData[
+    \(0``0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Cos7 = Rationalize[N[Cos[7], 100], 0]\)], "Input"],
+
+Cell[BoxData[
+    \(97264760697634516237069078752508243701479292016099\/\
+129015081381283468624183749722099485930618264494704\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(N[Cos[7] - Cos7, 20]\)], "Input"],
+
+Cell[BoxData[
+    \($MaxExtraPrecision::"meprec" \(\(:\)\(\ \)\) 
+      "In increasing internal precision while attempting to evaluate \!\(\
+\[LeftSkeleton] 1 \[RightSkeleton]\), the limit $MaxExtraPrecision = \
+\!\(49.99999999999999`\) was reached. Increasing the value of \
+$MaxExtraPrecision may help resolve the uncertainty."\)], "Message"],
+
+Cell[BoxData[
+    \(6.`-13.3876*^-87\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($MaxExtraPrecision = 100\)], "Input"],
+
+Cell[BoxData[
+    \(100\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(N[Sin[10^100], 30]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-0.372376123661276688262086695553164295719667883172`30\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(N[Cos[7] - Cos7, 20]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-4.82392320397698694852826216773941`20*^-102\)\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{
+        StyleBox[
+          RowBox[{
+            StyleBox["\:53ef\:4ee5\:4f7f\:7528",
+              
+              FontFamily->
+                "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+            StyleBox["Block",
+              FontColor->RGBColor[1, 0, 0]]}]], 
+        StyleBox["[",
+          FontColor->RGBColor[1, 0, 0]], 
+        StyleBox[\({$MaxExtraPrecision = n}, expr\),
+          FontColor->RGBColor[1, 0, 0]], 
+        StyleBox["]",
+          FontColor->RGBColor[1, 0, 0]]}], ",", 
+      StyleBox[
+        RowBox[{
+          StyleBox["\:5728\:6267\:884c",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], "expr", 
+          StyleBox["\:65f6\:6682\:65f6\:6539\:53d8\:9644\:52a0\:7cbe\:5ea6",
+            
+            FontFamily->
+              "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]]}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{"7.3", ".4", 
+      StyleBox[
+        "\:67d0\:4e9b\:80fd\:591f\:88ab\:7075\:6d3b\:8bbe\:7f6e\:7684\:7cfb\
+\:7edf\:53d8\:91cf",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}]], "Input",
+  FontSize->14],
+
+Cell[BoxData[
+    StyleBox[
+      "\:8fd9\:4e9b\:53d8\:91cf\:5728\:672a\:7528\:6237\:672a\:8d4b\:503c\
+\:524d\:4e0d\:8d77\:4f5c\:7528",
+      FontFamily->
+        "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_GB2312",
+      
+      FontColor->RGBColor[0, 0, 1]]], "Input"],
+
+Cell[BoxData[{
+    RowBox[{
+      RowBox[{
+        StyleBox["$Post",
+          FontColor->RGBColor[1, 0, 0]], " ", 
+        StyleBox[
+          "\:8bbe\:7f6e\:5b83\:7684\:503c\:4e3a\:4e00\:4e2a\:51fd\:6570",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox[
+        "\:6bcf\:6b21\:5c06\:8868\:8fbe\:5f0f\:6c42\:503c\:540e\:90fd\:5c06\
+\:8be5\:51fd\:6570\:4f5c\:7528\:5230\:6240\:5f97\:7ed3\:679c",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox["$PrePrint",
+          FontColor->RGBColor[1, 0, 0]], " ", 
+        StyleBox[
+          "\:8bbe\:7f6e\:5b83\:7684\:503c\:4e3a\:4e00\:4e2a\:51fd\:6570",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      RowBox[{
+        RowBox[{
+          StyleBox[
+            RowBox[{
+              
+              StyleBox[
+                "\:5728\:6bcf\:6b21\:5c06\:8868\:8fbe\:5f0f\:7684\:6c42\:503c\
+\:7ed3\:679c\:8d4b\:7ed9",
+                
+                FontFamily->
+                  "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\
+\[CapitalIHat]_GB2312"], 
+              StyleBox["Out",
+                FontFamily->"Courier New"]}]], 
+          StyleBox["[",
+            FontFamily->"Courier New"], 
+          StyleBox["n",
+            FontFamily->"Courier New"], 
+          StyleBox["]",
+            FontFamily->"Courier New"]}], 
+        StyleBox["\:540e",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox[
+        "\:518d\:5c06\:8be5\:51fd\:6570\:4f5c\:7528\:5230\:6240\:5f97\:7ed3\
+\:679c",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    RowBox[{
+      RowBox[{
+        StyleBox["$Pre",
+          FontColor->RGBColor[1, 0, 0]], "  ", 
+        StyleBox[
+          "\:8bbe\:7f6e\:5b83\:7684\:503c\:4e3a\:4e00\:4e2a\:51fd\:6570",
+          
+          FontFamily->
+            "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], 
+      StyleBox[",",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"], 
+      StyleBox[
+        "\:6bcf\:6b21\:5c06\:8868\:8fbe\:5f0f\:6c42\:503c\:524d\:90fd\:5c06\
+\:8be5\:51fd\:6570\:4f5c\:7528\:5230\:8f93\:5165\:8868\:8fbe\:5f0f\:4e0a",
+        FontFamily->
+          "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_\
+GB2312"]}], "\[IndentingNewLine]", 
+    StyleBox[
+      "\:51fd\:6570\:5fc5\:987b\:4e3a\:51fd\:6570\:540d\:6216\:4f7f\:7528\
+\:7eaf\:51fd\:6570",
+      FontFamily->
+        "\[CenterDot]\[CapitalAHat]\[CapitalEDoubleDot]\[CapitalIHat]_GB2312",
+      
+      FontColor->RGBColor[0, 0, 1]]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($Post = FullSimplify\)], "Input"],
+
+Cell[BoxData[
+    \(FullSimplify\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Gamma[x] Gamma[1 - x]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\ Csc[\[Pi]\ x]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($PrePrint = N[#, 20] &\)], "Input"],
+
+Cell[BoxData[
+    \(N[#1, 20.`20. ] &\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Sqrt[2]\)], "Input"],
+
+Cell[BoxData[
+    \(1.41421356237309504880168872420969807857`20. \)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Gamma[x] Gamma[1 - x]\)], "Input"],
+
+Cell[BoxData[
+    \(3.14159265358979323846264338358737222874`20. \ Csc[
+        3.14159265358979323846264338358737222874`20. \ x]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[{
+    \(\($Post =. ;\)\), "\[IndentingNewLine]", 
+    \(\($PrePrint =. ;\)\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(Out[5]\), "\[IndentingNewLine]", 
+    \(Out[6]\)}], "Input"],
+
+Cell[BoxData[
+    \(\@2\)], "Output"],
+
+Cell[BoxData[
+    \(\[Pi]\ Csc[\[Pi]\ x]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Clear["\<Global`*\>"]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \($Pre = N[#, 20] &\)], "Input"],
+
+Cell[BoxData[
+    \(N[#1, 20] &\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(3\)], "Input"],
+
+Cell[BoxData[
+    \(3.`20. \)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Sin[3]\)], "Input"],
+
+Cell[BoxData[
+    \(0.14112000805986722210074480280811027938`20. \)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \($Pre =. \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(3\)], "Input"],
+
+Cell[BoxData[
+    \(3\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Sin[3]\)], "Input"],
+
+Cell[BoxData[
+    \(Sin[3]\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.0 for Microsoft Windows",
+ScreenRectangle->{{0, 800}, {0, 527}},
+WindowSize->{765, 500},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+Magnification->1.5
+]
+
+
+(***********************************************************************
+Cached data follows.  If you edit this Notebook file directly, not using
+Mathematica, you must remove the line containing CacheID at the top of 
+the file.  The cache data will then be recreated when you save this file 
+from within Mathematica.
+***********************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1717, 49, 358, 12, 49, "Input"],
+Cell[2078, 63, 227, 6, 45, "Input"],
+Cell[2308, 71, 438, 13, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[2771, 88, 40, 1, 42, "Input"],
+Cell[2814, 91, 1874, 126, 2694, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4725, 222, 43, 1, 42, "Input"],
+Cell[4771, 225, 130, 2, 60, "Print"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4938, 232, 38, 1, 42, "Input"],
+Cell[4979, 235, 785, 13, 341, "Output"]
+}, Open  ]],
+Cell[5779, 251, 280, 8, 45, "Input"],
+Cell[6062, 261, 4043, 110, 250, "Input"],
+
+Cell[CellGroupData[{
+Cell[10130, 375, 42, 1, 42, "Input"],
+Cell[10175, 378, 41, 1, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10253, 384, 43, 1, 42, "Input"],
+Cell[10299, 387, 96, 2, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10432, 394, 43, 1, 42, "Input"],
+Cell[10478, 397, 97, 2, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10612, 404, 50, 1, 42, "Input"],
+Cell[10665, 407, 58, 1, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10760, 413, 50, 1, 42, "Input"],
+Cell[10813, 416, 59, 1, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10909, 422, 146, 3, 94, "Input"],
+Cell[11058, 427, 36, 1, 41, "Output"],
+Cell[11097, 430, 40, 1, 43, "Output"],
+Cell[11140, 433, 37, 1, 41, "Output"]
+}, Open  ]],
+Cell[11192, 437, 260, 7, 45, "Input"],
+Cell[11455, 446, 1465, 44, 120, "Input"],
+Cell[12923, 492, 106, 2, 68, "Input"],
+
+Cell[CellGroupData[{
+Cell[13054, 498, 37, 1, 42, "Input"],
+Cell[13094, 501, 296, 4, 35, "Message"],
+Cell[13393, 507, 136, 2, 66, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13566, 514, 37, 1, 42, "Input"],
+Cell[13606, 517, 295, 4, 35, "Message"],
+Cell[13904, 523, 56, 1, 41, "Output"]
+}, Open  ]],
+Cell[13975, 527, 52, 1, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[14052, 532, 39, 1, 42, "Input"],
+Cell[14094, 535, 113, 2, 66, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14244, 542, 39, 1, 42, "Input"],
+Cell[14286, 545, 296, 4, 35, "Message"],
+Cell[14585, 551, 129, 2, 66, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14751, 558, 40, 1, 42, "Input"],
+Cell[14794, 561, 35, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14866, 567, 40, 1, 42, "Input"],
+Cell[14909, 570, 295, 4, 35, "Message"],
+Cell[15207, 576, 41, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15285, 582, 55, 1, 42, "Input"],
+Cell[15343, 585, 38, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15418, 591, 147, 3, 94, "Input"],
+Cell[15568, 596, 127, 2, 66, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15732, 603, 59, 1, 42, "Input"],
+Cell[15794, 606, 45, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15876, 612, 147, 3, 94, "Input"],
+Cell[16026, 617, 35, 1, 41, "Output"]
+}, Open  ]],
+Cell[16076, 621, 577, 17, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[16678, 642, 51, 1, 42, "Input"],
+Cell[16732, 645, 398, 6, 160, "Message"],
+Cell[17133, 653, 38, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17208, 659, 70, 1, 42, "Input"],
+Cell[17281, 662, 139, 2, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17457, 669, 53, 1, 42, "Input"],
+Cell[17513, 672, 344, 5, 135, "Message"],
+Cell[17860, 679, 50, 1, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17947, 685, 57, 1, 42, "Input"],
+Cell[18007, 688, 37, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18081, 694, 51, 1, 42, "Input"],
+Cell[18135, 697, 92, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18264, 703, 53, 1, 42, "Input"],
+Cell[18320, 706, 82, 1, 43, "Output"]
+}, Open  ]],
+Cell[18417, 710, 996, 29, 68, "Input"],
+Cell[19416, 741, 286, 8, 45, "Input"],
+Cell[19705, 751, 287, 7, 39, "Input"],
+Cell[19995, 760, 3334, 96, 198, "Input"],
+
+Cell[CellGroupData[{
+Cell[23354, 860, 53, 1, 42, "Input"],
+Cell[23410, 863, 46, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23493, 869, 54, 1, 42, "Input"],
+Cell[23550, 872, 54, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23641, 878, 55, 1, 42, "Input"],
+Cell[23699, 881, 51, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23787, 887, 40, 1, 42, "Input"],
+Cell[23830, 890, 79, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23946, 896, 54, 1, 42, "Input"],
+Cell[24003, 899, 143, 2, 41, "Output"]
+}, Open  ]],
+Cell[24161, 904, 101, 2, 68, "Input"],
+
+Cell[CellGroupData[{
+Cell[24287, 910, 81, 2, 68, "Input"],
+Cell[24371, 914, 37, 1, 44, "Output"],
+Cell[24411, 917, 54, 1, 41, "Output"]
+}, Open  ]],
+Cell[24480, 921, 54, 1, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[24559, 926, 50, 1, 42, "Input"],
+Cell[24612, 929, 45, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24694, 935, 34, 1, 42, "Input"],
+Cell[24731, 938, 41, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24809, 944, 39, 1, 42, "Input"],
+Cell[24851, 947, 79, 1, 41, "Output"]
+}, Open  ]],
+Cell[24945, 951, 41, 1, 42, "Input"],
+
+Cell[CellGroupData[{
+Cell[25011, 956, 34, 1, 42, "Input"],
+Cell[25048, 959, 35, 1, 41, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25120, 965, 39, 1, 42, "Input"],
+Cell[25162, 968, 40, 1, 41, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+
+(***********************************************************************
+End of Mathematica Notebook file.
+***********************************************************************)
+
