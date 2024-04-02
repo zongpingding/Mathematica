@@ -1,0 +1,56 @@
+
+(* 笔记本背景 *)
+SetOptions[
+  	EvaluationNotebook[],
+  	Background -> RGBColor[0, 0, 0]
+  ];
+
+
+(* 绘图label设置 *)
+SetOptions[
+  	{Plot, Plot3D}, {LabelStyle -> White}
+  ];
+
+
+(* 语法高亮设置 *)
+SetOptions[
+  	EvaluationNotebook[],                                              \
+          (* 1.Only Apply to Current Notebook *)
+  	Background -> RGBColor[
+   0, 0, 0],                                                          \
+            (* 2.背景颜色设置 *)
+  	AutoStyleOptions -> {
+    	"LocalVariableStyle" -> {FontColor -> RGBColor[
+       0, 1, 0.25098]},         (* 3.局部变量颜色 *)
+    	"StringStyle" -> {FontColor -> RGBColor[
+       0.86, 0.56, 0.06]},                            (* 4.字符串颜色 *)
+    	"CommentStyle" -> {
+      		FontColor -> RGBColor[
+       0.5019607843137255, 1., 0.5019607843137255],
+      		ShowAutoStyles -> False, ShowSyntaxStyles -> False,
+      		AutoNumberFormatting -> False,
+      		TranslationOptions -> {"Enabled" -> False}
+      	},                                                             \
+                                                                      \
+ (* 5.注释颜色 *)
+    	"FunctionLocalVariableStyle" -> {FontColor -> RGBColor[
+       0.6196078431372549, 0.6196078431372549,
+        0.6196078431372549]},                                   (*
+    6.函数中局部变量的颜色 *)
+    	"PatternVariableStyle" -> {FontColor -> RGBColor[
+       0.5019607843137255, 0.5019607843137255, 1.],
+      FontSlant -> "Italic"}, (* 7.模式匹配变量的颜色 *)
+
+    "UndefinedSymbolStyle" -> {FontColor -> RGBColor[
+       0.93, 0.62,
+        0.46]}                                                    (*
+    8.未赋值的全局符号的颜色 *)
+          }
+  ];
+
+(* 使用下面的命令获取当前高亮参数 *)
+(*Options[Notebook, AutoStyleOptions]*)
+
+
+(*备注:匹配的函数头需要单独手动设置语法高亮为: RGB(128, 128, 192)*)
+mathematica背景和代码高亮设置
